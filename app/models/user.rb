@@ -6,7 +6,8 @@ class User < ApplicationRecord
   has_many :note_categories
   belongs_to :course
 
-  validates :name, presence: true, uniqueness: true
+  validates :name, presence: true
+  validates :email, uniqueness: true
   validates :password, presence: true
   validates :password_confirmation, presence: true
 end
