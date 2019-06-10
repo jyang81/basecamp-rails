@@ -1,4 +1,4 @@
 class CourseSerializer < ActiveModel::Serializer
-  attributes :id, :name, :start_date, :end_date
+  attributes :id, :name
   has_many :users
 end

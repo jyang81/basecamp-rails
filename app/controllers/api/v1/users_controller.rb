@@ -1,11 +1,17 @@
 class Api::V1::UsersController < ApplicationController
 
   before_action :find_user, only: [:update, :destroy, :show]
-  skip_before_action :authorized, only: [:create]
+
+  ### CHANGE SETTINGS back to only: [:create] before deploying! 
+  skip_before_action :authorized, only: [:create, :index, :show]
 
     def index
       @users = User.all
       render json: @users
+    end
+
+    def show
+      render json: @user
     end
 
     def profile
