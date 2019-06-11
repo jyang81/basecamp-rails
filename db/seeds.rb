@@ -14,10 +14,14 @@ Mood.destroy_all
 Note.destroy_all
 NoteCategory.destroy_all
 
-Course.create(name: 'Software Engineering Immersive', start_date: '2019-03-11', end_date: '2019-06-21')
-Course.create(name: 'Data Science', start_date: '2019-04-22', end_date: '2019-07-12')
+Course.create(name: 'Software Engineering Immersive')
+Course.create(name: 'Software Engineering Online')
+Course.create(name: 'Data Science')
+Course.create(name: 'UX/UI Design')
 
-User.create(name: 'Admin', email: 'admin@admin.com', password: '1234', password_confirmation: '1234', school: 'Flatiron School', start_date: '2019-03-11', end_date: '2019-06-21', course_id: 1)
+User.create(name: 'Admin', email: 'admin@admin.com', password: '123', password_confirmation: '123', school: 'Flatiron School', start_date: '2019-03-11', end_date: '2019-06-21', course_id: 1)
+
+User.create(name: 'User', email: 'user@user.com', password: 'aaa', password_confirmation: 'aaa', school: 'Flatiron School', start_date: '2019-03-11', end_date: '2019-06-21', course_id: 2)
 
 ToDo.create(item: 'Write blog #1', category: 'Blogs', due_date: Date.today + 7, user_id: 1)
 ToDo.create(item: 'Finalize FSP topic', category: 'FSP', due_date: Date.today + 10, user_id: 1)
