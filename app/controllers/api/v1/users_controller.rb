@@ -2,7 +2,7 @@ class Api::V1::UsersController < ApplicationController
 
   before_action :find_user, only: [:update, :destroy, :show]
 
-  ### CHANGE SETTINGS back to only: [:create] before deploying! 
+  ### CHANGE SETTINGS back to only: [:create] before deploying!
   skip_before_action :authorized, only: [:create, :index, :show]
 
     def index
@@ -19,8 +19,8 @@ class Api::V1::UsersController < ApplicationController
     end
 
     def create
-      @user = User.create(user_params)
-      if @user.valid?
+      @user = User.new(user_params)
+      if @user.save!
         @token = encode_token(user_id: @user.id)
         render json: { user: UserSerializer.new(@user), jwt: @token }, status: :created
       else
