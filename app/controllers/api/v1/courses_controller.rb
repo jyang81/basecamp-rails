@@ -1,7 +1,7 @@
 class Api::V1::CoursesController < ApplicationController
 
   before_action :find_course, only: [:update, :destroy]
-  skip_before_action :authorized
+  skip_before_action :authorized, only: [:create]
 
     def index
       @courses = Course.all
