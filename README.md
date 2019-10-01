@@ -4,7 +4,7 @@ Backend server for BaseCamp app
 
 Hosted at: 
 
-https://basecamp-rails.herokuapp.com/api/v1/
+https://basecamp-rails.herokuapp.com
 
 Frontend repo at:
 
