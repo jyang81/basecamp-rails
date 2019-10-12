@@ -1,24 +1,11 @@
-# README
+# BaseCamp
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Backend server for BaseCamp app
 
-Things you may want to cover:
+Hosted at: 
 
-* Ruby version
+https://basecamp-rails.herokuapp.com
 
-* System dependencies
+Frontend repo at:
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+https://github.com/jyang81/basecamp-react
