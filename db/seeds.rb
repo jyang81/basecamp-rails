@@ -31,6 +31,9 @@
 # Note.create(content: 'Recycling App', note_category_id: 1)
 # Note.create(content: 'Trivia Game', note_category_id: 1)
 
+# --- Destroy all Moods for Demo User ---
+Mood.where(user_id:4).destroy_all
+
 # --- WEEK 1 --- Mod 1.1
 Mood.create(rating: 7, date: '2019-09-03', user_id: 4)
 Mood.create(rating: 8, date: '2019-09-04', user_id: 4)
@@ -45,7 +48,7 @@ Mood.create(rating: 9, date: '2019-09-13', user_id: 4)
 Mood.create(rating: 10, date: '2019-09-14', user_id: 4)
 # --- WEEK 3 --- Mod 1.3
 Mood.create(rating: 9, date: '2019-09-17', user_id: 4)
-Mood.create(rating: 6, date: '2019-09-18', user_id: 4)
+
 Mood.create(rating: 5, date: '2019-09-19', user_id: 4)
 Mood.create(rating: 2, date: '2019-09-20', user_id: 4)
 Mood.create(rating: 7, date: '2019-09-21', user_id: 4)
@@ -57,7 +60,7 @@ Mood.create(rating: 7, date: '2019-09-27', user_id: 4)
 Mood.create(rating: 6, date: '2019-09-28', user_id: 4)
 # --- WEEK 5 --- Mod 2.2
 Mood.create(rating: 5, date: '2019-10-01', user_id: 4)
-Mood.create(rating: 4, date: '2019-10-02', user_id: 4)
+
 Mood.create(rating: 3, date: '2019-10-03', user_id: 4)
 Mood.create(rating: 2, date: '2019-10-04', user_id: 4)
 Mood.create(rating: 1, date: '2019-10-05', user_id: 4)
@@ -67,3 +70,28 @@ Mood.create(rating: 4, date: '2019-10-09', user_id: 4)
 Mood.create(rating: 6, date: '2019-10-10', user_id: 4)
 Mood.create(rating: 8, date: '2019-10-11', user_id: 4)
 Mood.create(rating: 9, date: '2019-10-12', user_id: 4)
+# --- WEEK 7 --- Mod 3.1
+Mood.create(rating: 5, date: '2019-10-15', user_id: 4)
+Mood.create(rating: 6, date: '2019-10-16', user_id: 4)
+Mood.create(rating: 5, date: '2019-10-17', user_id: 4)
+Mood.create(rating: 4, date: '2019-10-18', user_id: 4)
+Mood.create(rating: 3, date: '2019-10-19', user_id: 4)
+Mood.create(rating: 2, date: '2019-10-20', user_id: 4)
+Mood.create(rating: 4, date: '2019-10-21', user_id: 4)
+# --- WEEK 8 --- Mod 3.2
+Mood.create(rating: 5, date: '2019-10-22', user_id: 4)
+
+Mood.create(rating: 7, date: '2019-10-24', user_id: 4)
+Mood.create(rating: 7, date: '2019-10-25', user_id: 4)
+Mood.create(rating: 8, date: '2019-10-26', user_id: 4)
+# --- WEEK 9 --- Mod 3.3
+Mood.create(rating: 5, date: '2019-10-29', user_id: 4)
+Mood.create(rating: 4, date: '2019-10-30', user_id: 4)
+Mood.create(rating: 3, date: '2019-11-01', user_id: 4)
+Mood.create(rating: 2, date: '2019-11-02', user_id: 4)
+Mood.create(rating: 7, date: '2019-11-03', user_id: 4)
+# --- WEEK 10 --- Mod 4.1
+Mood.create(rating: 5, date: '2019-11-05', user_id: 4)
+Mood.create(rating: 7, date: '2019-11-06', user_id: 4)
+Mood.create(rating: 6, date: '2019-11-07', user_id: 4)
+Mood.create(rating: 6, date: '2019-11-08', user_id: 4)
